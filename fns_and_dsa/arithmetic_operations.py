@@ -1,5 +1,5 @@
 #arithmetic_operations.py
-def perform_operation(num1,num2, operation):
+def perform_operation(num1, num2, operation):
     if operation == "add":
         return num1 + num2
     
@@ -11,9 +11,9 @@ def perform_operation(num1,num2, operation):
     
     elif operation == "divide":
         if num2 == 0:
-            return "error: cannot divide by zero"
+            return "Error: Cannot divide by zero"
         return num1 / num2
     else:
-        return "Error: invalid operation"
+        return "Error: Invalid operation"
 
     
