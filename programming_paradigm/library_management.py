@@ -1,7 +1,7 @@
 # library_management.py
 
 class Book:
-    def _init_(self, title, author):
+    def __init__(self, title, author):
         self.title = title
         self.author = author
         self._is_checked_out = False
@@ -15,12 +15,12 @@ class Book:
     def is_available(self):
         return not self._is_checked_out
 
-    def _str_(self):
+    def __str__(self):
         return f"{self.title} by {self.author}"
 
 
 class Library:
-    def _init_(self):
+    def __init__(self):
         self._books = []
 
     def add_book(self, book):
